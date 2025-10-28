@@ -1,0 +1,31 @@
+{
+  "tests": [
+    {
+      "name": "Get all financial reports",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "reports": "array"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Create new financial report",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "date": "2024-10-28",
+        "operation_type": "income",
+        "amount": 5000,
+        "description": "Консультация",
+        "category": "Услуги"
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "report": "object"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

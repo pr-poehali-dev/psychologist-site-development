@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -17,6 +18,7 @@ const Index = () => {
     message: '',
   });
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,7 +58,13 @@ const Index = () => {
                 </button>
               ))}
             </div>
-            <Button onClick={() => scrollToSection('запись')}>Записаться</Button>
+            <div className="flex gap-2">
+              <Button variant="outline" onClick={() => navigate('/finance')}>
+                <Icon name="ChartBar" size={16} className="mr-2" />
+                Финансы
+              </Button>
+              <Button onClick={() => scrollToSection('запись')}>Записаться</Button>
+            </div>
           </div>
         </nav>
       </header>
