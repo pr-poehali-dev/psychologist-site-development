@@ -230,7 +230,7 @@ const Index = () => {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-accent" size={20} />
-                    <span>Центр Москвы, м. Тверская</span>
+                    <span>Москва, ул. Рябиновая, 10</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Check" className="text-accent" size={20} />
@@ -425,7 +425,7 @@ const Index = () => {
                           <Icon name="MapPin" size={20} className="text-accent" />
                           <div>
                             <p className="font-semibold">Очно в Москве (5 000 ₽)</p>
-                            <p className="text-sm text-muted-foreground">м. Тверская, центр города</p>
+                            <p className="text-sm text-muted-foreground">ул. Рябиновая, 10</p>
                           </div>
                         </div>
                       </Label>
@@ -486,7 +486,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Адрес</p>
-                    <p className="font-medium">Москва, ул. Тверская, 1</p>
+                    <p className="font-medium">Москва, ул. Рябиновая, 10</p>
                   </div>
                 </div>
               </CardContent>
